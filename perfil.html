@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipmotion</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #d9d9d9; padding-bottom: 125px">
+
+<header class="d-flex justify-content-between align-items-center p-3 shadow" style="background-color: #fa7800;">
+  <div class="d-flex align-items-center ml-3">
+    <img src="img/logoFlipmotion.png" alt="Flipmotion Logo" style="height: 50px;">
+  </div>
+  <div>
+    <a href="explorar.html" class="text-white mr-3" style="font-size: 1rem;">Explorar</a>
+    <a href="favoritos.html" class="text-white mr-3" style="font-size: 1rem;">Favoritos</a>
+    <a href="perfil.html" class="text-white mr-3" style="font-size: 1rem;">Perfil</a>
+    <a href="#" class="text-white mr-3" style="font-size: 1rem;">Cerrar sesión</a>
+    <img src="img/perfil.png" style="width: 45px">
+  </div>
+</header>
+
+<main>
+  <div class="container my-5">
+    <div class="card">
+      <div class="mb-1">
+        <h5 class="ml-4 mt-2">Editar Perfil</h5>
+      </div>
+      <div class="card-header text-right p-2 py-5" style="background-color: #fac1c1; background-image: url('img/perfil.jpeg'); background-size: 100%">
+        <a href="#" class="text-dark mt-5">
+          <img src="img/edit.png" alt="Edit" style="width: 40px;">
+        </a>
+
+        <div class="profile-pic ml-5 mb-3 position-absolute">
+          <a href="#" class="text-dark mt-5 position-absolute" style="margin-left: 70%">
+            <img src="img/edit.png" alt="Edit" class="edit-icon" style="width: 40px;">
+          </a>
+          <img src="img/perfil.png" class="rounded-circle" alt="Profile Picture" style="width: 100px;">
+        </div>
+      </div>
+      <div class="card-body mt-5">
+        <form>
+          <div class="form-row">
+            <div class="col-md-6">
+              <label for="nombre">Nombre</label>
+              <div class="input-group">
+                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 border-bottom" id="nombre" value="Ryan">
+                <div class="input-group-append">
+                  <span>
+                      <img src="img/edit.png" alt="Edit" style="width: 40px;">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="apellido">Apellido</label>
+              <div class="input-group">
+                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 border-bottom" id="apellido" value="Gosling">
+                <div class="input-group-append">
+                  <span class="">
+                      <img src="img/edit.png" alt="Edit" style="width: 40px;">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="pais">País</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="my-auto">
+                      <img src="img/mexico.png" alt="Mexico" style="width: 40px;">
+                  </span>
+                </div>
+                <input type="text" class="form-control border-0 text-dark" style="font-weight: 500; border-radius: 15px; background-color: #d9d9d9" id="pais" value="Mexico">
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="edad">Edad</label>
+              <div class="input-group">
+                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 border-bottom" id="edad" value="19 años">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <div class="input-group">
+              <input type="email" class="form-control border-top-0 border-right-0 border-left-0 border-bottom" id="correo" value="real_ryangosling@example.com">
+              <div class="input-group-append">
+                <span class="">
+                    <img src="img/edit.png" alt="Edit" style="width: 40px;">
+                </span>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg text-white px-5" style="background-color: #ff7f00;">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-white text-center p-3 shadow fixed-bottom col-12" style="background-color: #fa7800;">
+  <div class="d-flex justify-content-between align-items-center col-12">
+    <div class="d-flex align-items-center col-3">
+      <img src="img/logoFlipmotion.png" alt="Flipmotion Logo" style="height: 60px;">
+    </div>
+    <div class="mt-2 col-6" style="font-size: 0.8rem;">
+      <div class="text-center border-bottom">
+        <a href="contactos.html"><p class="col-3 mx-auto text-white" style="font-size: 1.1rem; text-decoration: none;">Contactos</p></a>
+      </div>
+      <div>
+        <p class="" style="font-weight: 600; font-size: 1.3em">COPYRIGHT © FLIPMOTION</p>
+      </div>
+    </div>
+    <div class="d-flex flex-column col-3 text-center">
+      <p class="text-white col-12 border-bottom" style="font-size: 1.2rem;">Redes Sociales</p>
+      <div class="d-flex col-12 justify-content-between">
+        <a href="https://www.x.com/home"><img src="img/twitter.png" alt="Twitter" class="" style="width: 30px"></a>
+        <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" class="" style="width: 30px"></a>
+        <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram" class="" style="width: 30px"></a>
+        <a href="https://www.youtube.com"><img src="img/youtube.png" alt="Youtube" class="" style="width: 30px"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
